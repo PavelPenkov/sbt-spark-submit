@@ -20,7 +20,10 @@ class SparkSubmitter(settings: SparkSubmitSettings, logger: Logger) {
       ("--driver-class-path", settings.driverClassPath),
       ("--executor-memory", settings.executorMemory),
       ("--proxy-user", settings.proxyUser),
-      ("--verbose", settings.verbose)
+      ("--verbose", settings.verbose),
+      ("--files", settings.files.mkString(",")),
+      ("--jars", settings.jars.mkString(","))
+
     ).collect { case (arg, Some(value)) => Seq(arg, value.toString)}
       .flatten
 

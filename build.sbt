@@ -1,6 +1,6 @@
 name := """sbt-spark-submit"""
 organization := "me.penkov"
-version := "0.1.15"
+version := "0.1.16"
 
 sbtPlugin := true
 
