@@ -5,7 +5,7 @@ and `scp` command line tools installed.
 
 ## Usage
 
-Add `addSbtPlugin("me.penkov" % "sbt-spark-submit" % "0.1.15")` to `project/spark-submit.sbt`.
+Add `addSbtPlugin("me.penkov" % "sbt-spark-submit" % "0.1.18")` to `project/spark-submit.sbt`.
 
 Configure Spark submit settings in `build.sbt`
 
